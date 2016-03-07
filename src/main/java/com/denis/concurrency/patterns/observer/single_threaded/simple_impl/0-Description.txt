@@ -1,0 +1,9 @@
+Create a zoo system that allows a client to register and unregister listeners
+that will be notified when an animal is added to the zoo. In addition, create a
+ concerete listener that will print the name of the animal that is added to the zoo.
+
+1 - A Zoo class that will act as the subject, responsible for storing a list of the animals in the zoo
+    and notifying a collection of registered listeners each time a new animal is added to the zoo
+2 - An Animal class that represents an animal with a name
+3 - An AnimalAddedListener class that acts as the Observer interface
+4 - A PrintNameAnimalAddedListener concrete observer class that prints the name of the animal that is added to the zoo

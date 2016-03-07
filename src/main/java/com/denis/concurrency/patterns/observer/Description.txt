@@ -1,0 +1,10 @@
+ https://dzone.com/articles/the-observer-pattern-using-modern-java
+
+ According to the classic definition coined by the GoF, the intent of the Observer Pattern is to
+                --------------------------------------------
+        Define a one-to-many dependency between objects so that when one object changes state,
+        all its dependents are notified and updated automatically.
+                --------------------------------------------
+ In the context of the original GoF definition, the object that is registered for updates is called an observer,
+ the manager of the data of interest is called a subject, the data of interest is called the state of the subject,
+ the process of registering an observer is called attaching, and the process of unregistering an observer is called detaching.
