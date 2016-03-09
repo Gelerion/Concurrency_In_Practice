@@ -6,5 +6,5 @@ public interface CustomFuture<V>
 {
 	V get() throws InterruptedException, ExecutionException;
 
-	void set(V value);
+	void set(V value) throws InterruptedException;
 }
