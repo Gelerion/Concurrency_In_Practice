@@ -35,8 +35,8 @@ public class NioReactor
 	private final Dispatcher dispatcher;
 	/**
 	 * All the work of altering the SelectionKey operations and Selector operations are performed in the context of main
-	 * event loop of reactor. So when any channel needs to change its readability or writability, a new command is added
-	 * in the command queue and then the event loop picks up the command and executes it in next iteration.
+	 * event loop of reactor. So when any channel needs to change its readability or writability, a new commands is added
+	 * in the commands queue and then the event loop picks up the commands and executes it in next iteration.
 	 */
 	private final Queue<Runnable> pendingCommands = new ConcurrentLinkedQueue<>();
 	private final ExecutorService reactorMain = Executors.newSingleThreadExecutor();

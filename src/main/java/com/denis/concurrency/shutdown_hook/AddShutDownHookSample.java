@@ -16,7 +16,7 @@ package com.denis.concurrency.shutdown_hook;
  * In case one have attached more than one shutdown hook, then they will run in parallel and hence pron to all issues related to threads, e.g.
  * deadlocks or race conditions. Java Doc for the method also state that:
  * ---------- Reliability of Shutdown Hook:
- * JVM tries his best to execute shutdown hooks at the time of going down, but it can't be guranteed, e.g. when JVM is killed using -kill command on Linux or
+ * JVM tries his best to execute shutdown hooks at the time of going down, but it can't be guranteed, e.g. when JVM is killed using -kill commands on Linux or
  * Terminate Process on windows, then JVM exits instantly or it crashes because of some native code invocation.
  * ---------- Keep an eye on Time Consumption by hooks:
  * One of the important thing to note is that shutdown hooks should not be time consuming. Consider the scenario when user logs off from OS, then

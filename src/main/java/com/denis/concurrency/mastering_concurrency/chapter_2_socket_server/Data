@@ -1,0 +1,28 @@
+In this section, we will implement a simple client/server application. It will make a search
+of data over the World Development Indicators of the World Bank, which you can
+download from here: http://data.worldbank.org/data-catalog/world-development indicators.
+This data contains the values of different indicators over all the countries in the
+world from 1960 to 2014.
+
+The main characteristics of our server will be:
+ * The client and the server will connect using sockets
+ * The client will send its queries in a string, and the server will respond to the results in
+    another string
+
+The server can respond with three different queries:
+  Query: The format of this query is
+        q;codCountry;codIndicator;year where
+        - codCountry is the code of the country,
+        - codIndicator is the code of the indicator
+        - year is an optional parameter with the year you want to query.
+  The server will respond with the information in a single string.
+
+  Report: The format of this query is
+    r;codIndicator where
+    - codIndicator is the code of the indicator you want to report.
+    The server will respond with the mean value of that indicator for all countries over the years in a single string.
+
+  Stop: The format of this query is z;.
+   The server stops its execution when it receives this command.
+
+In other cases, the server returns an error message.

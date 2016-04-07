@@ -1,0 +1,26 @@
+In this chapter, we are going to work with the Bank Marketing dataset of the UCI
+Machine Learning Repository, which you can download from
+http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
+
+
+Algorithm K Execution time (seconds)
+Serial
+10 100.296
+30 99.218
+50 99.458
+Fine-grained serial sort
+10 108.150
+30 105.196
+50 109.797
+Fine-grained concurrent sort
+10 84.663
+30 85,392
+50 83.373
+Coarse-grained serial sort
+10 78.328
+30 77.041
+50 76.549
+Coarse-grained concurrent sort
+10 54,017
+30 53.473
+50 53.255
